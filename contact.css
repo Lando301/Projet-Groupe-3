@@ -1,0 +1,481 @@
+/* Styles pour la page "Ifandraisana" */
+
+/* Main Container */
+.main-container {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0 50px;
+    position: relative;
+}
+
+/* Flèches */
+.nav-arrow {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--mainty);
+    padding: 20px;
+    transition: var(--transition);
+    position: relative;
+    z-index: 10;
+}
+
+.nav-arrow:hover {
+    color: var(--mainy);
+    transform: translateX(var(--translate-value));
+}
+
+.left-arrow {
+    --translate-value: -10px;
+    margin-right: 20px;
+}
+
+.right-arrow {
+    --translate-value: 10px;
+    margin-left: 20px;
+}
+
+.arrow-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--alokaloka);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.nav-arrow:hover .arrow-icon {
+    background: var(--mainy);
+    color: var(--fotsy);
+    transform: scale(1.1);
+}
+
+.arrow-label {
+    padding: 0 15px;
+    opacity: 0;
+    transform: translateX(var(--label-translate));
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.left-arrow .arrow-label {
+    --label-translate: -20px;
+    text-align: right;
+}
+
+.right-arrow .arrow-label {
+    --label-translate: 20px;
+    text-align: left;
+}
+
+.nav-arrow:hover .arrow-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Center Content */
+.center-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-box {
+    background: var(--fotsy);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.contact-box h1 {
+    color: var(--mainy);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-box h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--mainy);
+    border-radius: 2px;
+}
+
+/* Contact Content */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+@media (max-width: 992px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: var(--alokaloka);
+    border-radius: 15px;
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateX(10px);
+    background: var(--mainy);
+}
+
+.info-card:hover .info-icon {
+    background: var(--fotsy);
+    color: var(--mainy);
+}
+
+.info-card:hover h3,
+.info-card:hover p {
+    color: var(--fotsy);
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--mainy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--fotsy);
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.info-text h3 {
+    color: var(--mainy);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    transition: var(--transition);
+}
+
+.info-text p {
+    color: var(--mainty);
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: var(--transition);
+}
+
+/* Social Contact */
+.social-contact {
+    margin-top: 20px;
+    padding-top: 25px;
+    border-top: 2px solid var(--alokaloka);
+}
+
+.social-contact h3 {
+    color: var(--mainy);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--fotsy);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.social-link.facebook {
+    background: #1877f2;
+}
+
+.social-link.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-link.whatsapp {
+    background: #25d366;
+}
+
+.social-link:hover {
+    transform: translateX(10px);
+    opacity: 0.9;
+}
+
+/* Contact Form */
+.contact-form h2 {
+    color: var(--mainy);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px 20px;
+    border: 2px solid var(--alokaloka);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+    background: var(--fotsy);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--mainy);
+    box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--mainy);
+    color: var(--fotsy);
+    padding: 18px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: var(--mavo);
+    color: var(--mainy);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(46, 139, 87, 0.2);
+}
+
+/* Map Section */
+.map-section {
+    padding: 80px 0;
+    background: var(--alokaloka);
+    text-align: center;
+}
+
+.map-section h2 {
+    margin-bottom: 40px;
+    color: var(--mainy);
+    position: relative;
+    display: inline-block;
+}
+
+.map-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--mainy);
+    border-radius: 2px;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.map-placeholder {
+    height: 400px;
+    background: linear-gradient(rgba(46, 139, 87, 0.8), rgba(46, 139, 87, 0.3)), 
+                url('OIP\ \(3\).webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.map-overlay {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.map-overlay h3 {
+    color: var(--mainy);
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.map-overlay p {
+    color: var(--mainty);
+    margin-bottom: 20px;
+}
+
+.map-directions {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.map-directions p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.map-directions i {
+    color: var(--mainy);
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        padding: 80px 0 30px;
+    }
+    
+    .nav-arrow {
+        margin: 10px 0;
+        padding: 15px;
+    }
+    
+    .left-arrow, .right-arrow {
+        margin: 0;
+    }
+    
+    .arrow-label {
+        display: none;
+    }
+    
+    .center-content {
+        order: 2;
+        width: 100%;
+    }
+    
+    .left-arrow {
+        order: 1;
+    }
+    
+    .right-arrow {
+        order: 3;
+    }
+    
+    .map-placeholder {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        padding: 30px 20px;
+    }
+    
+    .contact-box h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+    
+    .info-card {
+        padding: 20px;
+    }
+    
+    .info-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .map-overlay {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .map-overlay h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .arrow-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .social-link {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .map-placeholder {
+        height: 300px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
