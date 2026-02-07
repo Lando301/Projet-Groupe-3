@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mada Travel - Tongasoa eto Madagasikara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-link[href="index.html"] {
+            color: var(--mainy);
+        }
+        .nav-link[href="index.html"]::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <span>Mada Travel</span>
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        Fandraisana
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="apropos.html" class="nav-link">
+                        Momba anay
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">
+                        Tolotra
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Ifandraisana
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section principale avec navigation par flèches -->
+    <main class="main-container">
+        <!-- Flèche gauche -->
+        <a href="index.html" class="nav-arrow left-arrow">
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="arrow-label">
+                <span>Fandraisana</span>
+            </div>
+        </a>
+
+        <!-- Contenu central -->
+        <div class="center-content">
+            <div class="welcome-box">
+                <h1>Mada Travel</h1>
+                
+                <div class="menu-links">
+                    <a href="index.html" class="menu-link active">Fandraisana</a>
+                    <a href="apropos.html" class="menu-link">Momba anay</a>
+                    <a href="destinations.html" class="menu-link">Tolotra</a>
+                    <a href="contact.html" class="menu-link">Ifandraisana</a>
+                </div>
+
+                <hr class="separator">
+
+                <div class="welcome-message">
+                    <h2>Tongasoa ato amin'ny MadaTravel</h2>
+                    
+                    <div class="weather-display">
+                        <i class="fas fa-sun"></i>
+                        <div class="weather-info">
+                            <span class="temperature">22°C</span>
+                            <span class="condition">Miposaka ny masoandro</span>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="destinations.html" class="action-btn">
+                            <i class="fas fa-search"></i>
+                            <span>Handalina</span>
+                        </a>
+                        <a href="contact.html" class="action-btn">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Mifandray</span>
+                        </a>
+                    </div>
+
+                    <div class="quick-categories">
+                        <a href="destinations.html#beaches" class="category">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <span>Morontsiraka</span>
+                        </a>
+                        <a href="destinations.html#nature" class="category">
+                            <i class="fas fa-tree"></i>
+                            <span>Zavaboary</span>
+                        </a>
+                        <a href="destinations.html#culture" class="category">
+                            <i class="fas fa-landmark"></i>
+                            <span>Kolontsaina</span>
+                        </a>
+                        <a href="destinations.html#adventure" class="category">
+                            <i class="fas fa-hiking"></i>
+                            <span>Fitsangatsanganana</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flèche droite -->
+        <a href="apropos.html" class="nav-arrow right-arrow">
+            <div class="arrow-label">
+                <span>Momba anay</span>
+            </div>
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+    </main>
+
+    <!-- Section météo détaillée -->
+    <section class="weather-section">
+        <div class="container">
+            <div class="weather-card">
+                <div class="current-weather">
+                    <i class="fas fa-cloud-sun"></i>
+                    <div>
+                        <h3>21°C</h3>
+                        <p>Mafana</p>
+                    </div>
+                </div>
+                <div class="weather-forecast">
+                    <div class="forecast-day">
+                        <span>Alakamisy</span>
+                        <i class="fas fa-sun"></i>
+                        <span>24°C</span>
+                    </div>
+                    <div class="forecast-day">
+                        <span>Zoma</span>
+                        <i class="fas fa-cloud-sun"></i>
+                        <span>22°C</span>
+                    </div>
+                    <div class="forecast-day">
+                        <span>Sabotsy</span>
+                        <i class="fas fa-sun"></i>
+                        <span>25°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>Mada Travel</h3>
+                <p>Manampy anao handalina ny tsara indrindra eto Madagasikara</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Rohy haingana</h3>
+                <ul>
+                    <li><a href="index.html">Fandraisana</a></li>
+                    <li><a href="apropos.html">Momba anay</a></li>
+                    <li><a href="destinations.html">Tolotra</a></li>
+                    <li><a href="contact.html">Ifandraisana</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ifandraisana</h3>
+                <p><i class="fas fa-map-marker-alt"></i> EMIT , Fianarantsoa</p>
+                <p><i class="fas fa-phone"></i> +261 38 91 321 56</p>
+                <p><i class="fas fa-envelope"></i> contact@madatravel.mg</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mada Travel - Tongasoa eto Madagasikara</p>
+        </div>
+    </footer>
+
+    <!-- Menu mobile -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <style>
+        .menu-toggle-checkbox {
+            display: none;
+        }
+        
+        .menu-toggle {
+            cursor: pointer;
+        }
+        
+        .menu-toggle-checkbox:checked ~ .navbar .nav-menu {
+            left: 0;
+        }
+        
+        .menu-toggle-checkbox:checked ~ .navbar .menu-toggle span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        
+        .menu-toggle-checkbox:checked ~ .navbar .menu-toggle span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .menu-toggle-checkbox:checked ~ .navbar .menu-toggle span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+    </style>
+    
+    <label for="menu-toggle" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+</body>
+</html>
