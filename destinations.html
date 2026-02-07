@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tolotra - Mada Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="destinations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-link[href="destinations.html"] {
+            color: var(--mainy);
+        }
+        .nav-link[href="destinations.html"]::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <span>Mada Travel</span>
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Fandraisana
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="apropos.html" class="nav-link">
+                        Momba anay
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link active">
+                        Tolotra
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Ifandraisana
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main container avec flèches -->
+    <main class="main-container">
+        <!-- Flèche gauche vers apropos -->
+        <a href="apropos.html" class="nav-arrow left-arrow">
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="arrow-label">
+                <span>Momba anay</span>
+            </div>
+        </a>
+
+        <!-- Contenu central -->
+        <div class="center-content">
+            <div class="destinations-box">
+                <h1>Tolotra</h1>
+                
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="nosybe.jpg" 
+                                 alt="Nosy Be">
+                            <div class="destination-tag">Morontsiraka</div>
+                        </div>
+                        <div class="destination-info">
+                            <h3>Nosy Be</h3>
+                            <p>Nosy malalaka sy morontsiraka fotsy</p>
+                            <div class="destination-price">1.200.000 Ar</div>
+                            <a href="contact.html" class="destination-btn">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Hiditra</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="images3.jpg.jpeg" 
+                                 alt="Baobab">
+                            <div class="destination-tag">Zavaboary</div>
+                        </div>
+                        <div class="destination-info">
+                            <h3>Ala Baobab</h3>
+                            <p>Hijery ny Baobab amin'ny filentehan'ny masoandro</p>
+                            <div class="destination-price">850.000 Ar</div>
+                            <a href="contact.html" class="destination-btn">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Hiditra</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="OIP.webp" 
+                                 alt="Antananarivo">
+                            <div class="destination-tag">Kolontsaina</div>
+                        </div>
+                        <div class="destination-info">
+                            <h3>Antananarivo</h3>
+                            <p>Mijery ny kolontsaina malagasy eo an-toerana</p>
+                            <div class="destination-price">650.000 Ar</div>
+                            <a href="contact.html" class="destination-btn">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Hiditra</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="Isalo.jpg" 
+                                 alt="Isalo">
+                            <div class="destination-tag">Fitsangatsanganana</div>
+                        </div>
+                        <div class="destination-info">
+                            <h3>Isalo</h3>
+                            <p>Fitsangatsanganana amin'ny tendrombohitra Isalo</p>
+                            <div class="destination-price">1.100.000 Ar</div>
+                            <a href="contact.html" class="destination-btn">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Hiditra</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="categories-section">
+                    <h2>Sokajy</h2>
+                    <div class="categories-grid">
+                        <a href="#beaches" class="category-btn active">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <span>Morontsiraka</span>
+                        </a>
+                        <a href="#nature" class="category-btn">
+                            <i class="fas fa-tree"></i>
+                            <span>Zavaboary</span>
+                        </a>
+                        <a href="#culture" class="category-btn">
+                            <i class="fas fa-landmark"></i>
+                            <span>Kolontsaina</span>
+                        </a>
+                        <a href="#adventure" class="category-btn">
+                            <i class="fas fa-hiking"></i>
+                            <span>Fitsangatsanganana</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flèche droite vers contact -->
+        <a href="contact.html" class="nav-arrow right-arrow">
+            <div class="arrow-label">
+                <span>Ifandraisana</span>
+            </div>
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+    </main>
+
+    <!-- Section prix -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2>Vidiny</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Dia 5 andro</h3>
+                    <div class="price">750.000 <span>Ar</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Trano fandraisam-bahiny</li>
+                        <li><i class="fas fa-check"></i> Sakafo maraina</li>
+                        <li><i class="fas fa-check"></i> Mpamily</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card featured">
+                    <div class="featured-badge">Tsara indrindra</div>
+                    <h3>Dia 8 andro</h3>
+                    <div class="price">1.250.000 <span>Ar</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Trano tsara</li>
+                        <li><i class="fas fa-check"></i> Sakafo 2</li>
+                        <li><i class="fas fa-check"></i> Mpitarika</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Dia 12 andro</h3>
+                    <div class="price">2.500.000 <span>Ar</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Trano tsara indrindra</li>
+                        <li><i class="fas fa-check"></i> Sakafo 3</li>
+                        <li><i class="fas fa-check"></i> Serivisy manontolo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>Mada Travel</h3>
+                <p>Manampy anao handalina ny tsara indrindra eto Madagasikara</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Rohy haingana</h3>
+                <ul>
+                    <li><a href="index.html">Fandraisana</a></li>
+                    <li><a href="apropos.html">Momba anay</a></li>
+                    <li><a href="destinations.html">Tolotra</a></li>
+                    <li><a href="contact.html">Ifandraisana</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ifandraisana</h3>
+                <p><i class="fas fa-map-marker-alt"></i> EMIT Fianarantsoa</p>
+                <p><i class="fas fa-phone"></i> +261 34 65 893 19</p>
+                <p><i class="fas fa-envelope"></i> contact@madatravel.mg</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mada Travel - Tongasoa eto Madagasikara</p>
+        </div>
+    </footer>
+
+    <!-- Menu mobile -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+</body>
+</html>
