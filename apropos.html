@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momba anay - Mada Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="apropos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-link[href="apropos.html"] {
+            color: var(--mainy);
+        }
+        .nav-link[href="apropos.html"]::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <span>Mada Travel</span>
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Fandraisana
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="apropos.html" class="nav-link active">
+                        Momba anay
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">
+                        Tolotra
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Ifandraisana
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main container avec flèches -->
+    <main class="main-container">
+        <!-- Flèche gauche vers accueil -->
+        <a href="index.html" class="nav-arrow left-arrow">
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="arrow-label">
+                <span>Fandraisana</span>
+            </div>
+        </a>
+
+        <!-- Contenu central -->
+        <div class="center-content">
+            <div class="about-box">
+                <h1>Momba anay</h1>
+                
+                <!-- Section image paysage -->
+                <div class="landscape-image-section">
+                    <div class="image-container">
+                        <!-- REMPLACEZ CETTE URL PAR VOTRE IMAGE PAYSAGE -->
+                        <img src="WhatsApp Image 2026-02-06 at 12.10.38.jpeg" 
+                             alt="Paysage de Madagascar - Baobabs" class="landscape-image">
+                        <div class="image-caption">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Manaja ny tontolo iainana sy ny kolontsaina malagasy</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Mahakasika ny MadaTravel</h2>
+                        <p>Misehatra ny fizahan-tany eto Madagasikara izahay ary manaja ny fepetran'ny tontolo iainana.</p>
+                        
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="mission-text">
+                                <h3>Ny tanjonay</h3>
+                                <p>Ny tanjon'ny agence de voyage dia ny hanampy sy hanamora ny dia ataon'ny mpanjifa amin'ny alalan'ny fanolorana tolotra tsara sy azo antoka.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="mission-text">
+                                <h3>Ny fahitanay</h3>
+                                <p>Mikendry izahay ny hanome traikefa mahafinaritra, hahafahan'ny olona mitsidika toerana vaovao, mahafantatra kolontsaina samihafa, ary mankafy ny dia tsy misy ahiahy.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="mission-text">
+                                <h3>Ny finoanay</h3>
+                                <p>Tanjona ihany koa ny hanome tolotra mifanaraka amin'ny filan'ny mpanjifa, amin'ny vidiny miray sy serivisy matihanina.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">14+</div>
+                            <div class="stat-label">Taona</div>
+                            <p>Nanomboka tamin'ny 2010</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">Mpanjifa</div>
+                            <p>Nandeha niaraka aminay</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Mpikarama</div>
+                            <p>Manampy anao</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Fahafaham-po</div>
+                            <p>Ny mpanjifa no tena manoro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flèche droite vers destinations -->
+        <a href="destinations.html" class="nav-arrow right-arrow">
+            <div class="arrow-label">
+                <span>Tolotra</span>
+            </div>
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+    </main>
+
+    <!-- Section valeurs -->
+    <section class="values-section">
+        <div class="container">
+            <h2>Ny soatoavinay</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Fitiavana</h3>
+                    <p>Manao ny asa am-pitiavana ny firenena</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Fiaraha-miasa</h3>
+                    <p>Miaraka amin'ny mponina eto</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Fiarovana</h3>
+                    <p>Manaja ny tontolo iainana</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Kalitao</h3>
+                    <p>Manome ny tsara indrindra</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>Mada Travel</h3>
+                <p>Manampy anao handalina ny tsara indrindra eto Madagasikara</p>
+                <div class="social-icons">
+                    <a href="facebook.html" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Rohy haingana</h3>
+                <ul>
+                    <li><a href="index.html">Fandraisana</a></li>
+                    <li><a href="apropos.html">Momba anay</a></li>
+                    <li><a href="destinations.html">Tolotra</a></li>
+                    <li><a href="contact.html">Ifandraisana</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ifandraisana</h3>
+                <p><i class="fas fa-map-marker-alt"></i> EMIT, Fianarantsoa</p>
+                <p><i class="fas fa-phone"></i> +261 33 90 528 87</p>
+                <p><i class="fas fa-envelope"></i> contact@madatravel.mg</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mada Travel - Tongasoa eto Madagasikara</p>
+        </div>
+    </footer>
+
+    <!-- Menu mobile -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+</body>
+</html>
