@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifandraisana - Mada Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-link[href="contact.html"] {
+            color: var(--mainy);
+        }
+        .nav-link[href="contact.html"]::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <span>Mada Travel</span>
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Fandraisana
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="apropos.html" class="nav-link">
+                        Momba anay
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">
+                        Tolotra
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">
+                        Ifandraisana
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main container avec flèches -->
+    <main class="main-container">
+        <!-- Flèche gauche vers destinations -->
+        <a href="destinations.html" class="nav-arrow left-arrow">
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="arrow-label">
+                <span>Tolotra</span>
+            </div>
+        </a>
+
+        <!-- Contenu central -->
+        <div class="center-content">
+            <div class="contact-box">
+                <h1>Ifandraisana</h1>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Toerana misy anay</h3>
+                                <p>EMIT ,Fianarantsoa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Antso</h3>
+                                <p>+261 38 26 781 10</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Mailaka</h3>
+                                <p>contact@madatravel.mg</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Fotoana misokatra</h3>
+                                <p>Alakamisy - Zoma: 8:00 - 18:00<br>Sabotsy: 8:00 - 12:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-contact">
+                            <h3>Hifandray aminay</h3>
+                            <div class="social-links">
+                                <a href="facebook.html" class="social-link facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="#" class="social-link instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-link whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Alefaso hafatra</h2>
+                        <form class="message-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Anarana" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Mailaka" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Laharana finday">
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Karazana fampahalalana</option>
+                                    <option value="info">Fampahalalana</option>
+                                    <option value="price">Vidiny</option>
+                                    <option value="booking">Famandrihana</option>
+                                    <option value="other">Hafa</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Hafatra..." rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Alefaso hafatra</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flèche droite vers accueil (boucle) -->
+        <a href="index.html" class="nav-arrow right-arrow">
+            <div class="arrow-label">
+                <span>Fandraisana</span>
+            </div>
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+    </main>
+
+    <!-- Section carte -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Toerana misy anay</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-overlay">
+                        <h3>Mada Travel Antananarivo</h3>
+                        <p>EMIT , Fianarantsoa</p>
+                        <div class="map-directions">
+                            <p><i class="fas fa-subway"></i> Akaikin'ny toby fiara fitateram-bahoaka</p>
+                            <p><i class="fas fa-car"></i> Fijerena fiara misy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>Mada Travel</h3>
+                <p>Manampy anao handalina ny tsara indrindra eto Madagasikara</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Rohy haingana</h3>
+                <ul>
+                    <li><a href="index.html">Fandraisana</a></li>
+                    <li><a href="apropos.html">Momba anay</a></li>
+                    <li><a href="destinations.html">Tolotra</a></li>
+                    <li><a href="contact.html">Ifandraisana</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ifandraisana</h3>
+                <p><i class="fas fa-map-marker-alt"></i> EMIT , Fianarantsoa</p>
+                <p><i class="fas fa-phone"></i> +261 34 08 140 79</p>
+                <p><i class="fas fa-envelope"></i> contact@madatravel.mg</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mada Travel - Tongasoa eto Madagasikara</p>
+        </div>
+    </footer>
+
+    <!-- Menu mobile -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+</body>
+</html>
