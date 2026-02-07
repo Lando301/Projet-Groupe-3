@@ -1,0 +1,436 @@
+/* Styles pour la page "Tolotra" */
+
+/* Main Container */
+.main-container {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0 50px;
+    position: relative;
+}
+
+/* Flèches */
+.nav-arrow {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--mainty);
+    padding: 20px;
+    transition: var(--transition);
+    position: relative;
+    z-index: 10;
+}
+
+.nav-arrow:hover {
+    color: var(--mainy);
+    transform: translateX(var(--translate-value));
+}
+
+.left-arrow {
+    --translate-value: -10px;
+    margin-right: 20px;
+}
+
+.right-arrow {
+    --translate-value: 10px;
+    margin-left: 20px;
+}
+
+.arrow-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--alokaloka);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.nav-arrow:hover .arrow-icon {
+    background: var(--mainy);
+    color: var(--fotsy);
+    transform: scale(1.1);
+}
+
+.arrow-label {
+    padding: 0 15px;
+    opacity: 0;
+    transform: translateX(var(--label-translate));
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.left-arrow .arrow-label {
+    --label-translate: -20px;
+    text-align: right;
+}
+
+.right-arrow .arrow-label {
+    --label-translate: 20px;
+    text-align: left;
+}
+
+.nav-arrow:hover .arrow-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Center Content */
+.center-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.destinations-box {
+    background: var(--fotsy);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.destinations-box h1 {
+    color: var(--mainy);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.destinations-box h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--mainy);
+    border-radius: 2px;
+}
+
+/* Destinations Grid */
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.destination-card {
+    background: var(--fotsy);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.destination-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover .destination-image img {
+    transform: scale(1.1);
+}
+
+.destination-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--mainy);
+    color: var(--fotsy);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.destination-info {
+    padding: 25px;
+}
+
+.destination-info h3 {
+    color: var(--mainy);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.destination-info p {
+    color: var(--mainty);
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.destination-price {
+    color: var(--mavo);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.destination-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--mainy);
+    color: var(--fotsy);
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 2px solid var(--mainy);
+}
+
+.destination-btn:hover {
+    background: var(--fotsy);
+    color: var(--mainy);
+    transform: translateY(-3px);
+}
+
+/* Categories Section */
+.categories-section {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid var(--alokaloka);
+}
+
+.categories-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--mainy);
+    font-size: 2rem;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: var(--alokaloka);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--mainty);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: var(--mainy);
+    color: var(--fotsy);
+    border-color: var(--mainy);
+    transform: translateY(-5px);
+}
+
+.category-btn i {
+    font-size: 1.5rem;
+    color: var(--mainy);
+    transition: var(--transition);
+}
+
+.category-btn:hover i,
+.category-btn.active i {
+    color: var(--mavo);
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 80px 0;
+    background: var(--alokaloka);
+    text-align: center;
+}
+
+.pricing-section h2 {
+    margin-bottom: 50px;
+    color: var(--mainy);
+    position: relative;
+    display: inline-block;
+}
+
+.pricing-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--mainy);
+    border-radius: 2px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.price-card {
+    background: var(--fotsy);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: var(--transition);
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.price-card.featured {
+    border: 3px solid var(--mavo);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--mavo);
+    color: var(--mainy);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.price-card h3 {
+    color: var(--mainy);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.price {
+    color: var(--mainy);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--mainty);
+}
+
+.price-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.price-card ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-card ul li i {
+    color: var(--mainy);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        padding: 80px 0 30px;
+    }
+    
+    .nav-arrow {
+        margin: 10px 0;
+        padding: 15px;
+    }
+    
+    .left-arrow, .right-arrow {
+        margin: 0;
+    }
+    
+    .arrow-label {
+        display: none;
+    }
+    
+    .center-content {
+        order: 2;
+        width: 100%;
+    }
+    
+    .left-arrow {
+        order: 1;
+    }
+    
+    .right-arrow {
+        order: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .destinations-box {
+        padding: 30px 20px;
+    }
+    
+    .destinations-box h1 {
+        font-size: 2.5rem;
+    }
+    
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .arrow-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
